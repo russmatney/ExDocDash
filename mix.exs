@@ -6,9 +6,9 @@ defmodule ExDocDash.Mixfile do
 			app: :ex_doc_dash,
 			version: "0.3.1",
 			elixir: "~> 1.2",
-			deps: deps,
-			description: description,
-			package: package,
+			deps: deps(),
+			description: description(),
+			package: package(),
 			name: "ExDocDash",
 			docs: [extras: ["README.md"]],
 			source_url: "https://github.com/JonGretar/ExDocDash",
@@ -22,7 +22,7 @@ defmodule ExDocDash.Mixfile do
 
 	defp deps do
 		[
-			{:ex_doc, ">= 0.12.0"}
+			{:ex_doc, ">= 0.15.0"}
 		]
 	end
 

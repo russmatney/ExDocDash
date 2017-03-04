@@ -21,11 +21,11 @@
 				<h1 id="introduction"><%= module.id %> <%= if module.type do %>(<%= module.type %>)<% end %></h1>
 
 
-	<%= if module.moduledoc do %>
-		<p><%= to_html(module.moduledoc) %></p>
+	<%= if module.doc do %>
+		<p><%= to_html(module.doc) %></p>
 	<% end %>
-	<%= if module.source do %>
-	<aside class="source"><a href="<%= module.source %>" class="view_source">Source</a></aside>
+	<%= if module.source_url do %>
+	<aside class="source"><a href="<%= module.source_url %>" class="view_source">Source</a></aside>
 	<% end %>
 
 	<%= unless Enum.empty?(functions) and Enum.empty?(macros) do %>

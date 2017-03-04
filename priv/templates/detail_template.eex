@@ -9,6 +9,6 @@
 <% end %>
 <%= to_html(node.doc) %>
 
-<%= if node.source do %>
-<aside class="source"><a href="<%= node.source %>" class="view_source">Source</a></aside>
+<%= if node.source_url do %>
+<aside class="source"><a href="<%= node.source_url %>" class="view_source">Source</a></aside>
 <% end %>

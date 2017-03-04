@@ -23,7 +23,7 @@ defmodule ExDocDash.Formatter.Dash do
 		generate_assets(output, config)
 		generate_icon(config)
 
-		all = Autolink.all(modules)
+		all = Autolink.all(modules, ".html", [])
 
 		modules    = filter_list(:modules, all)
 		exceptions = filter_list(:exceptions, all)
